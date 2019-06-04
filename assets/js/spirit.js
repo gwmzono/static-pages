@@ -47,4 +47,12 @@
       document.body.removeChild(a);
     }, 1000);
   }
+  
+  //屏蔽掉一些元素
+  var no_spirit_col = document.querySelectorAll('.no-spirit');
+  for(var j = 0; j < no_spirit_col.length; j++){
+    no_spirit_col[j].addEventListener('click', function(e){
+      e.stopPropagation();
+    });
+  }
 })(this);

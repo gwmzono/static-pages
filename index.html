@@ -6,12 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1,
   maximum-scale=1, minimum-scale=1, user-scalable=no" />
   <link rel="stylesheet" href=""/>
-  <title>market</title>
+  <title>static-pages</title>
+  <style>
+    div:before, div:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    div a{
+      display: block;
+      width: auto;
+      height: 60px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: #f3f3f3;
+      text-decoration: none;
+      float: left;
+      line-height: 60px;
+      color: #666;
+      margin-left: 20px;
+    }
+    a:hover{
+      background-color: rgba(0,0,0,0.2);
+    }
+    a:visited{
+      color: #e3e3e3;
+    }
+  </style>
 </head>
 <body>
   <h2>以下是我仿的一些静态网页</h2>
   <div>
-    <a href="taoertao/index.html">taoertao.com</a>
+    <a href="taoertao/index.html" class="no-spirit">taoertao.com</a>
+    <a href="xiaomi/index.html" class="no-spirit">mi.com</a>
   </div>
 </body>
 <script src="assets/js/spirit.js"></script>
