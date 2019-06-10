@@ -1,0 +1,233 @@
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.true-wrap:before, .true-wrap:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-space{
+  font-size: 0px;
+  -webkit-text-size-adjust:none;
+}
+.no-space>*{
+  font-size: 1rem;
+}
+a.link{
+  color: #333;
+}
+a.link:hover{
+  color: #ff6700;
+}
+
+/*-------------------topbar-------------------------*/
+#topbar{
+  height: 40px;
+  width: 100%;
+  min-width: 1200px;
+  background-color: #333;
+}
+#topbar-wrap{
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+}
+#topbar-wrap a{
+  font-size: 12px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  color: #b0b0b0;
+  margin-right: 15px;
+}
+#topbar-wrap a:hover{
+  color: rgb(255,255,255);
+}
+#topbar-wrap-right i{
+  vertical-align: -4%;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-right: 5px;
+}
+
+/*-------------------------navbar---------------------------*/
+#navbar{
+  min-width: 1200px;
+}
+#navbar-wrap{
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+#navbar-wrap-1{
+  height: 100px;
+  margin-right: 200px;
+}
+#navbar-wrap-1 a{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 25px 0;
+}
+#navbar-wrap-2{
+  height: 100px;
+}
+#navbar-wrap-2 li{
+  display: inline-block;
+  margin-right: 18px;
+}
+#navbar-wrap-2 li a{
+  color: #333;
+  margin: 10px 0;
+  display: block;
+  line-height: 80px;
+}
+#navbar-wrap-2 li a:hover{
+  color: #ff6700;
+}
+#navbar-wrap-3 form{
+  display: block;
+  margin: 25px 0;
+  position: relative;
+}
+#navbar-wrap-3 form input{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+}
+#navbar-wrap-3 form input:hover{
+  border: 1px solid #a0a0a0;
+}
+#navbar-wrap-3 form span{
+  padding: 10px;/*增加点击面积*/
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+#navbar-wrap-3 form span:hover{
+  cursor: pointer;
+  color: #ff6700;
+}
+
+/*----------------------------item-topbar-----------------------*/
+.item-topbar{
+  width: 100%;
+  min-width: 1200px;
+  box-shadow: 0 5px 10px -5px #ddd;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.item-topbar.fixed{
+  position: fixed;
+  top: 0px;
+}
+.item-topbar .fl{
+  line-height: 60px;
+}
+.item-topbar .fr{
+  line-height: 60px;
+  color: #ccc;
+}
+
+/*---------------------------item-content----------------------*/
+
+.item-content{
+  width: 100%;
+  min-width: 1200px;
+}
+.item-content .fl{
+  width: 600px;
+}
+.item-content .fl.fixed{
+  position: fixed;
+  top: 80px;
+}
+.item-content .fr{
+  width: 50%;
+  height: 1500px;
+}
+.item-content .carousel{
+  overflow: hidden;
+  padding: 50px;
+  padding-top: 0;
+  position: relative;
+}
+.item-content .carousel-item{
+  position: relative;
+}
+.item-content .carousel-item li{
+  position: absolute;
+}
+.item-content .carousel-item a{
+  display: block;
+  width: 500px;
+  height: 500px;
+  background-color: #ccc;
+}
+.item-content .dot-list{
+  position: absolute;
+  right: 100px;
+  bottom: 80px;
+  z-index: 10;
+}
+.item-content .dot{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-right: 10px;
+  border: 2px solid #b6b6b6;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.6);
+}
+.item-content .dot:hover{
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.8);
+}
+.item-content .dot:last-of-type{
+  margin-right: 0;
+}
+.item-content .dot.selected{
+  background-color: rgba(255,255,255,0.8);
+}
+.item-content .carousel-item{
+  width: 100%;
+  height: 500px;
+}
+.item-content .carousel-switch>*{
+  display: block;
+  position: absolute;
+  z-index: 20;
+  font-size: 3em;
+  line-height: 80px;
+  height: 80px;
+  width: 50px;
+  color: #e3e3e3;
+  margin-top: -40px;
+}
+.item-content .carousel-switch>*:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.3);
+}
+.item-content .carousel-switch>span:first-of-type{
+  position: absolute;
+  left: 50px;
+  top: 50%;
+}
+.item-content .carousel-switch>span:last-of-type{
+  position: absolute;
+  right: 50px;
+  top: 50%;
+}
+
+
+.item-content .fr

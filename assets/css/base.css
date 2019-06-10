@@ -5,6 +5,9 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre,
 h1,h2,h3,h4,h5,h6{
   font-weight: normal;
 }
+body{
+  font-size: 14px;
+}
 img{
   display: inline-block;
   border: none;
@@ -12,6 +15,7 @@ img{
 a{
   color: #333;
   text-decoration: none;
+  outline: none;
 }
 li{list-style: none;}
 
@@ -20,4 +24,14 @@ li{list-style: none;}
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+a:hover{
+  color: #ff6700;
+}
+.mi-color{
+  color: #ff6700;
+}
+.page-wrap{
+  width: 1200px;
+  margin: 0 auto;
 }

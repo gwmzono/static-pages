@@ -26,6 +26,7 @@
       line-height: 60px;
       color: #666;
       margin-left: 20px;
+      margin-bottom: 20px;
     }
     a:hover{
       background-color: rgba(0,0,0,0.2);
@@ -42,5 +43,10 @@
     <a href="xiaomi/index.html" class="no-spirit">mi.com</a>
   </div>
 </body>
-<script src="assets/js/spirit.js"></script>
+<script src="assets/js/lazy.js"></script>
+<script>
+  window.onload = function(){
+    lazy.showSpirits();
+  }
+</script>
 </html>

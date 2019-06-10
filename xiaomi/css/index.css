@@ -28,6 +28,7 @@ a.link:hover{
 #topbar{
   height: 40px;
   width: 100%;
+  min-width: 1200px;
   background-color: #333;
 }
 #topbar-wrap{
@@ -54,7 +55,9 @@ a.link:hover{
 }
 
 /*-------------------------navbar---------------------------*/
-#navbar{}
+#navbar{
+  min-width: 1200px;
+}
 #navbar-wrap{
   width: 1200px;
   height: 100px;
@@ -116,7 +119,9 @@ a.link:hover{
 }
 
 /*-------------------------carousel------------------------------*/
-#carousel{}
+#carousel{
+  min-width: 1200px;
+}
 #carousel-wrap{
   width: 1200px;
   height: 460px;
@@ -226,6 +231,7 @@ a.link:hover{
 }
 #spot .dot:hover{
   cursor: pointer;
+  background-color: rgba(255,255,255,0.8);
 }
 #spot .dot:last-of-type{
   margin-right: 0;
@@ -236,6 +242,7 @@ a.link:hover{
 
 /*---------------------------------item---------------------------*/
 #item{
+  min-width: 1200px;
   margin-top: 30px;
   background-color: #f5f5f5;
 }

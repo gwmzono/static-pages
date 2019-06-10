@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/iconfont/iconfont.css">
+  <link rel="stylesheet" href="css/10001.css"/>
+  <title>Redmi Note 7</title>
+</head>
+<body>
+  
+  <div id="topbar">
+    <div id="topbar-wrap" class="true-wrap">
+      <div id="topbar-wrap-left" class="fl no-space">
+        <a href="javascript:;">小米商城</a>
+        <a href="javascript:;">MIUI</a>
+        <a href="javascript:;">IoT</a>
+        <a href="javascript:;">云服务</a>
+        <a href="javascript:;">金融</a>
+        <a href="javascript:;">有品</a>
+        <a href="javascript:;">小爱开放平台</a>
+        <a href="javascript:;">企业团购</a>
+        <a href="javascript:;">资质证照</a>
+        <a href="javascript:;">协议规则</a>
+        <a href="javascript:;">下载app</a>
+        <a href="javascript:;" class="normal">Select Region</a>
+      </div>
+      <div id="topbar-wrap-right" class="fr no-space">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="javascript:;">消息通知</a>
+        <a href="javascript:;"><i class="iconfont icon-icon-test2"></i>购物车</a>
+      </div>
+    </div>
+  </div>
+  
+  <div id="navbar">
+    <div id="navbar-wrap">
+      <div id="navbar-wrap-1" class="fl">
+        <a href="javascript:;">
+          <img src="img/mi.PNG" alt="logo" style="width: 50px;height: 50px;">
+        </a>
+      </div>
+      <div id="navbar-wrap-2" class="fl">
+        <ul class="no-space">
+          <li><a href="javascript:;">小米手机</a></li>
+          <li><a href="javascript:;" class="normal">Redmi 红米</a></li>
+          <li><a href="javascript:;">电视</a></li>
+          <li><a href="javascript:;">笔记本</a></li>
+          <li><a href="javascript:;">家电</a></li>
+          <li><a href="javascript:;">路由器</a></li>
+          <li><a href="javascript:;">智能硬件</a></li>
+          <li><a href="javascript:;">服务</a></li>
+          <li><a href="javascript:;">社区</a></li>
+        </ul>
+      </div>
+      <div id="navbar-wrap-3" class="fr">
+        <form action="javascript:;" class="no-space">
+          <input id="search-input" type="text">
+          <span class="iconfont icon-icon-test3"></span>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="item-topbar">
+    <div class="page-wrap true-wrap">
+      <div class="fl">
+        <h2>Redmi Note 7</h2>
+      </div>
+      <div class="fr">
+        <a href="javascript:;">概述</a> |
+        <a href="javascript:;">参数</a> |
+        <a href="javascript:;">F码通道</a> |
+        <a href="javascript:;">用户评价</a> |
+      </div>
+    </div>
+  </div>
+  
+  <div class="item-content">
+    <div class="page-wrap true-wrap">
+      <div class="fl">
+        <div class="carousel">
+          <div class="carousel-switch">
+            <span class="iconfont icon-icon-test11"></span>
+            <span class="iconfont icon-icon-test13"></span>
+          </div>
+          <div class="dot-list no-space">
+            <span class="dot selected"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="carousel-item">
+            <ul>
+              <li><a href="javascript:;" style="background-color: #FF7878;"></a></li>
+              <li><a href="javascript:;" style="background-color: #B4FFB4;"></a></li>
+              <li><a href="javascript:;" style="background-color: #A0B4FF;"></a></li>
+              <li><a href="javascript:;" style="background-color: #FFFFB4;"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="fr">
+        <div class="right-wrap">
+          <h2>Redmi Note 7</h2>
+          <p><span class="mi-color">「购Redmi Note 7 享花呗分期3期免息，可选+10元得18W快充或洞洞壳」</span> 4800万拍照千元机 / “满血版”骁龙660处理器 / 品质“小金刚”，18个月超长质保 / 4000mAh 大电量 / 6.3" 水滴全面屏 / USB-C 接口，方便耐用 / 支持快充 4 协议</p>
+          <p class="mi-color">小米自营</p>
+          <p class="mi-color">1399元</p>
+          <hr>
+          <span>赠品</span><span>赠米粉卡</span>
+          <hr>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script src="../assets/js/lazy.js"></script>
+  <script>
+    window.onload = function(){
+      document.addEventListener('scroll', function(){
+        if(document.documentElement.scrollTop > 140){
+          var topbar = document.querySelector('.item-topbar');
+          var left = document.querySelector('.item-content .fl');
+          lazy.addClass(topbar, 'fixed');
+          lazy.addClass(left, 'fixed');
+        }else{
+          topbar = document.querySelector('.item-topbar');
+          left = document.querySelector('.item-content .fl');
+          lazy.removeClass(topbar, 'fixed');
+          lazy.removeClass(left, 'fixed');
+        }
+      });
+      
+      lazy.carousel({
+        left_btn: '.item-content .carousel-switch>span:first-of-type',
+        right_btn: '.item-content .carousel-switch>span:last-of-type',
+        wrap: '.item-content .carousel',
+        dot: '.item-content .dot',
+        item: '.item-content .carousel-item li',
+        anim: 'fade'
+      })
+    }
+  </script>
+</body>
+</html>
